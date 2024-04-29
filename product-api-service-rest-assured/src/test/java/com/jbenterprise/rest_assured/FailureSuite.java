@@ -63,11 +63,13 @@ public class FailureSuite {
     		.all();
     }
 	
-	@Test
+	@ParameterizedTest
+	@CsvFileSource(resources = "/datos.csv", numLinesToSkip = 1)
     @DisplayName("Fallo - Actualizar producto usando /api/v1/product/")
     public void updateProduct(String name,String description, String price, String message) {
 		float fPrice = Float.parseFloat(price);
     	ProductRequest productRequest = Utils.generateNewProductRequest();    	
+    	
     	productRequest.setName(name);
     	productRequest.setDescription(description);
     	productRequest.setPrice(fPrice);
