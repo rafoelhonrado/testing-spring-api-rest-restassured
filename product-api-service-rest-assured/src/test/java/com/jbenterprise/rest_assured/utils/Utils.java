@@ -9,7 +9,15 @@ public class Utils {
     	return ProductRequest.builder()
     			.name("Iphone 15")
     			.description("Un equipo moderno de la marca Apple")
-    			.price(0f)
+    			.price(1400)
+    			.build();    	
+    }
+    
+    public static ProductRequest generateNewProductRequest(String name,String description, float price) {
+    	return ProductRequest.builder()
+    			.name(name)
+    			.description(description)
+    			.price(price)
     			.build();    	
     }  
 }
