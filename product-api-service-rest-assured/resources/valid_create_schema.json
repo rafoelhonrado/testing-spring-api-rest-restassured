@@ -1,0 +1,43 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1723276254.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"sku",
+		"status",
+		"message"
+	],
+	"properties": {
+		"sku": {
+			"$id": "#root/sku", 
+			"title": "Sku", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"14cab102-b71b-4232-af9a-20e8d0ece7b5"
+			],
+			"pattern": "^.*$"
+		},
+		"status": {
+			"$id": "#root/status", 
+			"title": "Status", 
+			"type": "boolean",
+			"examples": [
+				true
+			],
+			"default": true
+		},
+		"message": {
+			"$id": "#root/message", 
+			"title": "Message", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"El producto fue actualizado con éxito"
+			],
+			"pattern": "^.*$"
+		}
+	}
+}

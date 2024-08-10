@@ -1,4 +1,5 @@
-name,description,price,message
-,Telefono Alta Gama,1800,El nombre del producto no fue proporcionado
-Iphone 200,,1900,La descripción del producto no fue proporcionada
-Iphonw 300,Alta Gama,0,El precio del producto no fue proporcionado
+test,name,description,price,message
+crear,Iphone 100,Telefono Alta Gama,1800,El producto fue creado con éxito!
+actualizar,Iphone 200,Telefono de Alta Gama,1900,El producto fue actualizado con éxito
+actualizar,Iphonw 300,Alta Gama,1500,El producto fue actualizado con éxito
+actualizar,Iphonw 300,Alta Gama,1500,El producto fue actualizado con éxito
