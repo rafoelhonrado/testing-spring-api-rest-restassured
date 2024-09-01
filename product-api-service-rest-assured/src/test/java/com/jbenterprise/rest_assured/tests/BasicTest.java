@@ -14,7 +14,7 @@ public class BasicTest {
 	
 	@Test
 	@Tag("Basic")
-    @DisplayName("GET products - /api/v1/product/")
+    @DisplayName("Metodo HTTP GET productos - /api/v1/product/")
     public void getProducts() {
 		 System.out.println("START - Running BasicSuite getProducts - " + Thread.currentThread().getId());
     	 given()
