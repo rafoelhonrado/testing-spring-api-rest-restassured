@@ -102,48 +102,4 @@ public class ParameterTest {
     	.log()
     	.all();
     }
-	
-	/*
-
-	
-	@Disabled
-	@Test
-    @DisplayName("Fallo - Actualizar precio  usando /api/v1/product/")
-    public void updatePrice() {
-    	ProductRequest productRequest = Utils.generateNewProductRequest();    	
-    	productRequest.setName("No Modificar");
-    	productRequest.setDescription("No Modificar");
-    	productRequest.setPrice(0);
-    	
-    	given()
-		.pathParam("sku", sku)
-    	.contentType(ContentType.JSON)
-    	.body(productRequest)
-    .when()
-    	.put("/api/v1/product/{sku}/")
-    .then()
-    	.statusCode(HttpStatus.SC_BAD_REQUEST)
-    	.body("status", equalTo(false))
-    	.body("message", equalTo(""))
-    	.log()
-    	.all();
-    }
-	
-    @Test
-    @DisplayName("Fallo - Eliminar producto usando /api/v1/product/")
-    public void deleteProduct() {
-    	String skuFalso="00000";
-    	given()
-        	.contentType(ContentType.JSON)
-        .when()
-        	.delete(String.format("/api/v1/product/%1$s/",skuFalso))
-        .then()
-	    	.statusCode(HttpStatus.SC_NOT_FOUND)
-	    	.body("status", equalTo(false))
-	    	.body("message", equalTo("El producto no fue encontrado"))
-	    	.log()
-	    	.all();  	
-    }
-    
-*/
 }
