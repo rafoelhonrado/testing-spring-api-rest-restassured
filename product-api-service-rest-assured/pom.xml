@@ -80,7 +80,7 @@
 					<version>${surefire-version}</version>
 					<configuration>
 						<includes>
-							
+
 							<include>**/*Test.java</include>
 						</includes>
 						<excludes>

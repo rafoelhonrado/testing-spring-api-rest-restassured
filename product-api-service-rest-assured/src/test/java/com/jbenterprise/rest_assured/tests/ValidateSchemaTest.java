@@ -61,7 +61,8 @@ public class ValidateSchemaTest {
     @DisplayName("Validate Schema from file- /api/v1/product/")
     public void validateSchema2() {
     	 System.out.println("START - Running IntermediateSuite createNewProduct - " + Thread.currentThread().getId());
-    	 File schemaFile = new File("src/test/resources/product-schema.json");
+    	 ClassLoader classLoader = getClass().getClassLoader();
+    	 File schemaFile = new File(classLoader.getResource("valid_create_schema.json").getFile());
     	ProductRequest productRequest = Utils.generateNewProductRequest();
     	given()
     		.spec(requestSpec)
@@ -75,8 +76,6 @@ public class ValidateSchemaTest {
     		.body("message", equalTo("El producto fue creado con éxito!"))
     		.body("sku", CoreMatchers.not(equalTo("")))
     		.body(matchesJsonSchema(schemaFile));
-    		//.log()
-    		//.all();
     	System.out.println("END - Running IntermediateSuite createNewProduct - " + Thread.currentThread().getId());
     }
 }
