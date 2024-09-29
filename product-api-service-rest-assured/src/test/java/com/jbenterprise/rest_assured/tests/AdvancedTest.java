@@ -46,7 +46,6 @@ public class AdvancedTest {
     }
 	
 	@Test
-	@Disabled
     @DisplayName("GET products verify greater than zero - /api/v1/product/")
     public void getProductsVerifyUsingResponse() {
 		System.out.println("START - Running AdvancedSuite getProductsVerifyUsingResponse - " + Thread.currentThread().getId());

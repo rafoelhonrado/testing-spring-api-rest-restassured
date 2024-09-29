@@ -62,6 +62,12 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version> <!-- Usa la versión más reciente disponible -->
 		</dependency>
+		
+		<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version> <!-- O la versión que necesites -->
+</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

@@ -12,11 +12,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
 import com.jbenterprise.rest_assured.entity.Product;
 import com.jbenterprise.rest_assured.entity.ProductRequest;
 import com.jbenterprise.rest_assured.entity.ProductResponse;
 import com.jbenterprise.rest_assured.utils.ExtentReportManager;
 import com.jbenterprise.rest_assured.utils.Utils;
+
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;

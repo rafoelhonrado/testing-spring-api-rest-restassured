@@ -59,7 +59,6 @@ public class ParameterAdvTest {
     }   
 	
 	@ParameterizedTest
-	@Disabled
 	@CsvFileSource(resources = "/datos.csv", numLinesToSkip = 1)
     @DisplayName("Parametrizado usando assumeTrue - Crear nuevo producto usando /api/v1/product/")
     public void createNewProduct(String test,String name,String description, String price, String message) {
